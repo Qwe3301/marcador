@@ -6,32 +6,63 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(224, 224, 224);
 }
+
 #texto {
     display: inline;
-    width: 50vh;
+    width: 67%;
     height: 300px;
-    
+    resize: none;
+
 }
-#erros{
+
+#texto_digitado{
+    margin-top: 20px;
+    width: 68%;
+    text-align: center;
+}
+
+p{
+    font-size: 23px;
+}
+
+#div_erros{
+    margin-top: -100px;
     float: right;
     position: sticky;
     top: 20px;
-    width: 30%;
+    width: 300px;
     min-height: 20vh;
     max-height: 70vh;
     border: solid black;
     overflow: auto;
 }
-#texto_erro {
-    height: 400px;
-    width: 1000px;
+
+#botao{
+    display:block;
+    width: 67.7%;
 }
 
-#texto_digitado{
-    width: 68%;
-    text-align: justify;
+#botoes_formas{
+    width: 150px;
+    float: right;
+    margin-right:80px;
+    padding: 10px;
+    
 }
 
-p{
-    font-size: 23px;
+.botoes {
+    margin: 20px;
+    display: flex;
+}
+
+main{
+    
+}
+
+input {
+    float: left;
+    color: brown;
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
 }

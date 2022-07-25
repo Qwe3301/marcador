@@ -8,21 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="sem">Isso muda </h1>
-    <h1></h1>
-    <div id="texto_erro">
-        <textarea 
-        name="texto" 
-        id="texto" 
-        
-        ></textarea> </div>
+    <main>
+        <h1 id="sem">Marcacao de texto </h1>
+        <textarea name="texto" id="texto" ></textarea> 
 
-        <button id="botao"> my hope?</button>
+        <div id="botoes_formas">
+            <div>
+                <input id="botao1" type="radio" name="botao">
+                <h1 class="botoes sublinhado">Sublinhado </h1> 
+            </div>
+            <div>
+                <input id="botao2" type="radio" name="botao" >
+                <h1 class="botoes quadro">Quadro</h1>
+            </div>
+            <div>
+                <input id="botao3" type="radio" name="botao">
+                <h1 class="botoes marcador">Marcador</h1>
+            </div>
+        </div>
 
- <div id="erros"></div>
- <div id="texto_digitado"></div>
+        <div id="div_erros"></div>
+        <button id="botao">click aqui?</button>
+        <div id="texto_digitado"></div>
+    </main>
 
-    <script type="module" src="https://unpkg.com/rough-notation?module"></script>
-    <script type="module" src="algo.js"></script>
+<script type="module" src="https://unpkg.com/rough-notation?module"></script>
+<script type="module" src="algo.js"></script>
 </body>
 </html>
