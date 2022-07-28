@@ -3,17 +3,18 @@ body {
 }
 
 main {
-     margin: auto;
-    height: auto;
-    width: 70vh;
+    
+    height: 1000px;
+    width: 1000px;
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(224, 224, 224);
+    margin: auto;
 }
 
 #texto {
     display: inline;
-    width: 67%;
+    width: 60%;
     height: 300px;
     resize: none;
 }
@@ -21,7 +22,7 @@ main {
 #texto_digitado{
     margin-top: 20px;
     width: 68%;
-    text-align: justify;
+    text-align: center;
 }
 
 p{
@@ -43,7 +44,7 @@ p{
 
 #botao{
     display:block;
-    width: 67.7%;
+    width: 60.7%;
 }
 
 #botoes_formas{

@@ -57,7 +57,7 @@ function input_txt() {
             calcular()
             let desenhar = annotate(tx, {
                 type: estilo_atual,
-                padding: [1, -10, 1, 1],   // [, ]
+                padding: [1, 1, 1, 1],   // [, ]
                 color: "black"
             })
             desenhar.show()
