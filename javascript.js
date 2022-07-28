@@ -4,7 +4,7 @@ const texto = document.getElementById("texto")
 const body = document.getElementById("texto_digitado")
 const div_erro = document.getElementById('div_erros')
 
-const sublinhado = document.getElementsByClassName("sublinhado")[0]
+const sublinhado = document.getElementById ("marca")
 const quadro = document.getElementsByClassName("quadro")[0]
 const marcador = document.getElementsByClassName("marcador")[0]
 
@@ -28,14 +28,18 @@ let estilo_atual= "box"
 
 document.getElementById("botao").addEventListener("click", input_txt)
 function input_txt() {
-    let array = texto.value.split(" ")
-    console.log (array.length)
+    let array = texto.value.replaceAll("\n", "\n ").split(" ")
+    console.log (array)
+
+    let explicacao = document.createElement('h1')
+        body.appendChild(explicacao)
+        explicacao.innerHTML = "Aqui selecione a palavra que queira marcar"
 
     for (let i = 0; i < array.length; i++) {
         let tx = document.createElement('p')
         body.appendChild(tx)
 
-        tx.innerHTML = array[i] + " "
+        tx.innerHTML = array[i].replaceAll("\n", "<br>") + " "
         tx.style.display = "inline"
         tx.className = "cor" + i
         tx.addEventListener("click", selecionar)

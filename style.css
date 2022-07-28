@@ -1,5 +1,9 @@
 body {
-    margin: auto;
+    background-color: rgb(224, 224, 224);
+}
+
+main {
+     margin: auto;
     height: auto;
     width: 1000px;
     font-size: 12px;
@@ -12,13 +16,12 @@ body {
     width: 67%;
     height: 300px;
     resize: none;
-
 }
 
 #texto_digitado{
     margin-top: 20px;
     width: 68%;
-    text-align: center;
+    text-align: justify;
 }
 
 p{
@@ -43,15 +46,16 @@ p{
 }
 
 #botoes_formas{
-    width: 150px;
+    width: 200px;
     float: right;
     margin-right:80px;
-    padding: 10px;
+    padding: 15px;
     
 }
 
 .botoes {
     margin: 20px;
+    padding: 2px;
     display: flex;
 }
 
