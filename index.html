@@ -10,24 +10,64 @@
 <body>
     <main>
         <h1 >Marcacao de texto </h1>
-        <textarea name="texto" id="texto" ></textarea> 
+        <textarea placeholder="Insira seu texto aqui" name="texto" id="texto" ></textarea> 
 
         <div id="botoes_formas">
             <div>
-                <input id="botao1" type="radio" name="botao">
-                <h1  id="marca" class="botoes sublinhado">Sublinhado </h1> 
+                <input 
+                id="botao1" 
+                type="radio" 
+                name="botao">
+                <h1  
+                id="txt_underline" 
+                class="botoes sublinhado">Sublinhado </h1> 
             </div>
             <div>
-                <input id="botao2" type="radio" name="botao" >
-                <h1 class="botoes quadro">Quadro</h1>
+                <input 
+                id="botao2" 
+                type="radio" 
+                name="botao" >
+                <h1 
+                class="botoes circle"
+                id="txt_circle"
+
+                
+                >Circulo</h1>
             </div>
             <div>
-                <input id="botao3" type="radio" name="botao">
-                <h1 class="botoes marcador">Marcador</h1>
+                <input 
+                id="botao3" 
+                type="radio" 
+                name="botao">
+                <h1 
+                class="botoes quadro"
+                id="txt_box"
+                >Quadrado</h1>
             </div>
+            <div>
+                <input 
+                id="botao4" 
+                type="radio" 
+                name="botao">
+                <h1 
+                class="botoes marcador"
+                id="txt_highlight"
+                >Marcador</h1>
+            </div>
+            <div id="div_cor">
+                <h1>Cor do marcador</h1>
+               
+                <input id="cor" type="color">
+                <div>
+                     <button id="botao_mudar_cor">Mudar</button>
+                     <h1 id="valor_cor"> #000000</h1>
+                </div>
+                 <div id="div_erros"></div>
+            </div>
+           
         </div>
 
-        <div id="div_erros"></div>
+        
         <button id="botao">click aqui</button>
        
         <div id="texto_digitado"></div>

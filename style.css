@@ -30,16 +30,16 @@ p{
 }
 
 #div_erros{
-    margin-top: -100px;
-    float: right;
     position: sticky;
     top: 20px;
-    width: 300px;
+    width: 200px;
     min-height: 20vh;
     max-height: 70vh;
     border: solid black;
     overflow: auto;
     text-align: center;
+    margin-right:93px;
+
 }
 
 #botao{
@@ -52,7 +52,6 @@ p{
     float: right;
     margin-right:80px;
     padding: 15px;
-    
 }
 
 .botoes {
@@ -67,4 +66,18 @@ input {
     width: 30px;
     height: 30px;
     margin-right: 14px;
+}
+
+#div_cor {
+    width: 300px;
+}
+#cor{
+    
+    margin-left: 10%;
+    width: 80px;
+    height: 80px;
+}
+#botao_mudar_cor {
+    width: 100px;
+    height: 40px;
 }
