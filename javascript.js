@@ -24,10 +24,11 @@ const tipo_underline = "underline"
 const tipo_circle =    "circle"
 const tipo_box =       "box"
 const tipo_highlight = "highlight"
+let padding = 1
 
 document.getElementById("botao1").addEventListener("click", mudar => estilo_atual= tipo_underline)
-document.getElementById("botao2").addEventListener("click", mudar => estilo_atual= tipo_circle)
-document.getElementById("botao3").addEventListener("click", mudar => estilo_atual= tipo_box)
+document.getElementById("botao2").addEventListener("click", mudar =>{ estilo_atual= tipo_circle, padding= [2, 4, 2, -7]})
+document.getElementById("botao3").addEventListener("click", mudar =>{estilo_atual= tipo_box, padding = [0, 3, 0, -10]})
 document.getElementById("botao4").addEventListener("click", mudar => estilo_atual= tipo_highlight)
 
 
@@ -42,7 +43,7 @@ const exemplo_marcador   = annotate(circulo, { type: tipo_circle, color: "yellow
 const exemplo_highlight  = annotate(marcador, { type: tipo_highlight, color: "yellow" })
   exemplo_highlight.show()
 
-let estilo_atual= "box"
+let estilo_atual= "underline"
 
 // --------------------------------------------------------------
 
@@ -80,7 +81,7 @@ function input_txt() {
 
                     let desenhar = annotate(tx, {
                             type: estilo_atual,
-                            padding: [0, 3, 0, -10],   // [, ]
+                            padding: padding,   // [, ]
                             color: cor_atual
                     })
                     
