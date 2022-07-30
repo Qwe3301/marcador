@@ -22,7 +22,7 @@ main {
 #texto_digitado{
     margin-top: 20px;
     width: 68%;
-    text-align: center;
+    text-align: justify;
 }
 
 p{
