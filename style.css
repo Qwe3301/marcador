@@ -23,7 +23,7 @@ main {
     margin-top: 20px;
     width: 67%;
     min-height: 50px;
-    text-align: center; 
+    text-align: left; 
 }
 
 p{
@@ -91,8 +91,6 @@ svg{
     left: 213px; 
     overflow: visible; 
     pointer-events: none; 
-    width: 100px; 
-    height: 100px;
-    padding-left: -200px;
-    padding-right: 10px;
+   
+    
 }

@@ -52,7 +52,7 @@ let numero_erros = 0
 
 document.getElementById("botao").addEventListener("click", input_txt)
 function input_txt() {
-    let array =      texto.value.replaceAll("\n", "\n ").split(" ")
+    let array =      texto.value.replaceAll("\n", "<br> ").split(" ")
     let explicacao = document.createElement('h1')
         body.appendChild(explicacao)
         explicacao.innerHTML = "Aqui selecione a palavra que queira marcar"
@@ -60,7 +60,7 @@ function input_txt() {
     for (let i = 0; i < array.length; i++) {
         let tx = document.createElement('p')
             body.appendChild(tx)
-            tx.innerHTML =    array[i].replaceAll("\n", " <br>") + " "
+            tx.innerHTML =       array[i] + " "
             tx.style.display = "inline"
             tx.className = "cor" + i
             tx.addEventListener("click", selecionar)
