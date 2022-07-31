@@ -27,8 +27,8 @@ const tipo_highlight = "highlight"
 let padding = 1
 
 document.getElementById("botao1").addEventListener("click", mudar => estilo_atual= tipo_underline)
-document.getElementById("botao2").addEventListener("click", mudar =>{ estilo_atual= tipo_circle, padding= [2, 4, 2, -7]})
-document.getElementById("botao3").addEventListener("click", mudar =>{estilo_atual= tipo_box, padding = [0, 3, 0, -10]})
+document.getElementById("botao2").addEventListener("click", mudar =>{ estilo_atual= tipo_circle, padding= [2, 4, 2, 0]})
+document.getElementById("botao3").addEventListener("click", mudar =>{estilo_atual= tipo_box, padding = [0, 3, 0, 0]})
 document.getElementById("botao4").addEventListener("click", mudar => estilo_atual= tipo_highlight)
 
 
@@ -52,7 +52,7 @@ let numero_erros = 0
 
 document.getElementById("botao").addEventListener("click", input_txt)
 function input_txt() {
-    let array =      texto.value.replaceAll("\n", "<br> ").split(" ")
+    let array =      texto.value.replaceAll("\n", "\n ").split(" ")
     let explicacao = document.createElement('h1')
         body.appendChild(explicacao)
         explicacao.innerHTML = "Aqui selecione a palavra que queira marcar"
@@ -60,7 +60,7 @@ function input_txt() {
     for (let i = 0; i < array.length; i++) {
         let tx = document.createElement('p')
             body.appendChild(tx)
-            tx.innerHTML =  "&nbsp" + array[i].replaceAll("\n", "<br> ")
+            tx.innerHTML =    array[i].replaceAll("\n", " <br>") + " "
             tx.style.display = "inline"
             tx.className = "cor" + i
             tx.addEventListener("click", selecionar)

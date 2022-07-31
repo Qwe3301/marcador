@@ -4,7 +4,7 @@ body {
 
 main {
     
-    height: 1000px;
+    height: auto;
     width: 1000px;
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
@@ -21,12 +21,15 @@ main {
 
 #texto_digitado{
     margin-top: 20px;
-    width: 68%;
-    text-align: justify;
+    width: 67%;
+    min-height: 50px;
+    text-align: center; 
 }
 
 p{
     font-size: 20px;
+    margin: 0px;
+    
 }
 
 #div_erros{
@@ -80,4 +83,16 @@ input {
 #botao_mudar_cor {
     width: 100px;
     height: 40px;
+}
+
+svg{
+    position: absolute; 
+    top: 0px; 
+    left: 213px; 
+    overflow: visible; 
+    pointer-events: none; 
+    width: 100px; 
+    height: 100px;
+    padding-left: -200px;
+    padding-right: 10px;
 }
