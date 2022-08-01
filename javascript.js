@@ -52,7 +52,7 @@ let numero_erros = 0
 
 document.getElementById("botao").addEventListener("click", input_txt)
 function input_txt() {
-    let array =      texto.value.replaceAll("\n", "<br> ").split(" ")
+    let array = texto.value.replaceAll("\n", "<br> ").split(" ")
     let explicacao = document.createElement('h1')
         body.appendChild(explicacao)
         explicacao.innerHTML = "Aqui selecione a palavra que queira marcar"
@@ -60,14 +60,14 @@ function input_txt() {
     for (let i = 0; i < array.length; i++) {
         let tx = document.createElement('p')
             body.appendChild(tx)
-            tx.innerHTML =       array[i] + " "
+            tx.innerHTML =array[i] + " "
             tx.style.display = "inline"
             tx.className = "cor" + i
             tx.addEventListener("click", selecionar)
 
             function selecionar() {
                 tx.style.color = "red"
-                console.log(tx.textContent)
+                
                 let erro = document.createElement('h1')
                 div_erro.appendChild(erro)
                 erro.innerHTML = tx.textContent.replace(",", "")
@@ -89,4 +89,40 @@ function input_txt() {
                     calcular()
         }
     }
+}
+
+
+
+
+
+var font = "Times New Roman"
+console.log (font)
+
+let sans = document.getElementById ("1")
+sans.addEventListener("mouseover", ta=>{body.style.fontFamily = "sans-serif"})
+sans.addEventListener("mouseout",ta=>{body.style.fontFamily = font})
+sans.addEventListener("click", aqui=> font = "sans-serif")
+
+let archivo = document.getElementById ("2")
+archivo.addEventListener("mouseover", ta=>{body.style.fontFamily = "monospace"})
+archivo.addEventListener("mouseout",ta=>{body.style.fontFamily = font})
+archivo.addEventListener("click", aqui=> font = "monospace")
+
+
+let impact = document.getElementById ("3")
+impact.addEventListener ("mouseover", ta=>{body.style.fontFamily = "Impact" })
+impact.addEventListener("mouseout",ta=>{body.style.fontFamily = font})
+impact.addEventListener("click", aqui=> font = "impact")
+
+
+//document.getElementById ("4").addEventListener ("mouseover", ta=>{a.style.fontFamily = "Confortaa" })
+
+//document.getElementById ("5").addEventListener ("mouseover", ta=>{a.style.fontFamily = "Fredoka One"})
+
+
+//font.addEventListener ("change", iniciar)
+
+function iniciar (){
+    body.style.fontFamily = font;
+    console.log (font)
 }

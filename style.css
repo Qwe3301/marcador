@@ -23,7 +23,7 @@ main {
     margin-top: 20px;
     width: 67%;
     min-height: 50px;
-    text-align: left; 
+    text-align: justify; 
 }
 
 p{
@@ -91,6 +91,26 @@ svg{
     left: 213px; 
     overflow: visible; 
     pointer-events: none; 
-   
-    
+}
+
+
+#edicao_txt {
+    border: solid black;
+    width: 60%;
+    height: 200px;
+}
+
+
+#foda{
+    float: left;
+    border: solid black;
+    width: 200px;
+    height: 35px;
+    overflow: hidden;
+    font-size: 26px;
+}
+#foda:hover{
+    width: 200;
+    height: 90px;
+    border: solid black;
 }
