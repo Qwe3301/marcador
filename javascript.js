@@ -93,36 +93,25 @@ function input_txt() {
 
 
 
+let size_list = document.getElementById ("list_fonts")
 
 
-var font = "Times New Roman"
-console.log (font)
 
-let sans = document.getElementById ("1")
-sans.addEventListener("mouseover", ta=>{body.style.fontFamily = "sans-serif"})
-sans.addEventListener("mouseout",ta=>{body.style.fontFamily = font})
-sans.addEventListener("click", aqui=> font = "sans-serif")
+let fonts_inical = document.getElementById ("fonts")
 
-let archivo = document.getElementById ("2")
-archivo.addEventListener("mouseover", ta=>{body.style.fontFamily = "monospace"})
-archivo.addEventListener("mouseout",ta=>{body.style.fontFamily = font})
-archivo.addEventListener("click", aqui=> font = "monospace")
+let font_atual = "Times New Roman"
+
+for (let i=0; i<size_list.childElementCount; i++ ){
+   let change_list= document.getElementsByClassName ("font_li")[i]
+    
+    change_list.style.fontFamily = change_list.textContent
 
 
-let impact = document.getElementById ("3")
-impact.addEventListener ("mouseover", ta=>{body.style.fontFamily = "Impact" })
-impact.addEventListener("mouseout",ta=>{body.style.fontFamily = font})
-impact.addEventListener("click", aqui=> font = "impact")
+
+    change_list.addEventListener ("mouseover", mudar=> {body.style.fontFamily = change_list.textContent,change_list.style.backgroundColor = "brown"})
+    change_list.addEventListener ("mouseout", mudar=> {body.style.fontFamily = font_atual,change_list.style.backgroundColor = "rgb(224, 224, 224)"})
+    change_list.addEventListener ("click", mudar=>{font_atual=change_list.textContent,fonts_inical.innerHTML = font_atual,change_list.style.backgroundColor = "green"})
 
 
-//document.getElementById ("4").addEventListener ("mouseover", ta=>{a.style.fontFamily = "Confortaa" })
 
-//document.getElementById ("5").addEventListener ("mouseover", ta=>{a.style.fontFamily = "Fredoka One"})
-
-
-//font.addEventListener ("change", iniciar)
-
-function iniciar (){
-    body.style.fontFamily = font;
-    console.log (font)
 }

@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcador</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Comfortaa:wght@300&family=Cookie&family=Dancing+Script&family=Gloria+Hallelujah&family=IBM+Plex+Mono:wght@100&family=Inconsolata:wght@200&family=Indie+Flower&family=Josefin+Sans:wght@100&family=Lobster&family=Mouse+Memoirs&family=Nothing+You+Could+Do&family=Noto+Serif&family=Pacifico&family=Permanent+Marker&family=Quintessential&family=Rajdhani:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Sacramento&family=Shadows+Into+Light&family=Tangerine&family=Taviraj:wght@100&display=swap');
+    </style>
 </head>
+
 <body>
     <main>
-        <h1 >Marcacao de texto </h1>
-        <textarea placeholder="Insira seu texto aqui" name="texto" id="texto" ></textarea> 
+        <h1>Marcacao de texto </h1>
+        <textarea placeholder="Insira seu texto aqui" name="texto" id="texto"></textarea>
 
         <div id="botoes_formas">
             <div>
-                <input 
-                id="botao1" 
-                type="radio" 
-                name="botao">
-                <h1  
-                id="txt_underline" 
-                class="botoes sublinhado">Sublinhado </h1> 
+                <input id="botao1" type="radio" name="botao">
+                <h1 id="txt_underline" class="botoes sublinhado">Sublinhado </h1>
             </div>
             <div>
-                <input 
-                id="botao2" 
-                type="radio" 
-                name="botao" >
-                <h1 
-                class="botoes circle"
-                id="txt_circle"
+                <input id="botao2" type="radio" name="botao">
+                <h1 class="botoes circle" id="txt_circle">Circulo</h1>
+            </div>
+            <div>
+                <input id="botao3" type="radio" name="botao">
+                <h1 class="botoes quadro" id="txt_box">Quadrado</h1>
+            </div>
+            <div>
+                <input id="botao4" type="radio" name="botao">
+                <h1 class="botoes marcador" id="txt_highlight">Realçar</h1>
+            </div>
 
-                
-                >Circulo</h1>
-            </div>
-            <div>
-                <input 
-                id="botao3" 
-                type="radio" 
-                name="botao">
-                <h1 
-                class="botoes quadro"
-                id="txt_box"
-                >Quadrado</h1>
-            </div>
-            <div>
-                <input 
-                id="botao4" 
-                type="radio" 
-                name="botao">
-                <h1 
-                class="botoes marcador"
-                id="txt_highlight"
-                >Realçar</h1>
-            </div>
             <div id="div_cor">
                 <h1>Cor da marcação</h1>
-               
+
                 <input id="cor" type="color">
                 <div>
-                     <button id="botao_mudar_cor">Mudar</button>
-                     <h1 id="valor_cor"> #000000</h1>
+                    <button id="botao_mudar_cor">Mudar</button>
+                    <h1 id="valor_cor"> #000000</h1>
                 </div>
                 <div>
-                    <ul id="foda">
-                    <li id="1" > Sans-serif </li> 
-                    <li id="2">Monospace </li>
-                    <li id="3">Impact</li>   
-                </ul></div>
-                 <div id="div_erros"></div>
+                    <ul id="list_fonts">
+                        <li id="fonts"> Fontes</li>
+                        <li class="font_li">Quintessential</li>
+                        <li class="font_li">Sans-serif</li>
+                        <li class="font_li">Caveat</li>
+                        <li class="font_li">Comfortaa </li>
+                        <li class="font_li">Cookie </li>
+                        <li class="font_li">Dancing Script </li>
+                        <li class="font_li">Gloria Hallelujah </li>
+                        <li class="font_li">IBM Plex Mono</li>
+                        <li class="font_li">Inconsolata</li>
+                        <li class="font_li">Indie Flower</li>
+                        <li class="font_li">Josefin Sans</li>
+                        <li class="font_li">Lobster</li>
+                        <li class="font_li">Mouse Memoirs</li>
+                        <li class="font_li">Nothing You Could Do</li>
+                        <li class="font_li">Noto Serif</li>
+                        <li class="font_li">Pacifico</li>
+                        <li class="font_li">Permanent Marker</li>
+                        <li class="font_li">Rajdhani</li>
+                        <li class="font_li">Roboto</li>
+                        <li class="font_li">Roboto Mono</li>
+                        <li class="font_li">Sacramento</li>
+                        <li class="font_li">Shadows Into Light</li>
+                        <li class="font_li">Tangerine</li>
+                        <li class="font_li">Taviraj</li>
+                    </ul>
+                </div>
+                <div id="div_erros"></div>
             </div>
-           
+
         </div>
 
-        
+
         <button id="botao">click aqui</button>
-        <!--<div id="edicao_txt"></div>-->  
-       
+        <!--<div id="edicao_txt"></div>-->
+
         <div id="texto_digitado"></div>
     </main>
 
-<script type="module" src="https://unpkg.com/rough-notation?module"></script>
-<script type="module" src="javascript.js"></script>
+    <script type="module" src="https://unpkg.com/rough-notation?module"></script>
+    <script type="module" src="javascript.js"></script>
 </body>
+
 </html>

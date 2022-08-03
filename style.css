@@ -1,3 +1,8 @@
+*{
+    list-style: none;
+}
+
+
 body {
     background-color: rgb(224, 224, 224);
 }
@@ -100,17 +105,36 @@ svg{
     height: 200px;
 }
 
+#fonts {
+    position: sticky;
+    top: 0px;
+    width: 295px;
+    background-color:rgb(224, 224, 224) ;
+    border: 3px solid black;
+    position: right 10px;
+}
 
-#foda{
+#list_fonts{
     float: left;
     border: solid black;
-    width: 200px;
-    height: 35px;
+    height: 39px;
     overflow: hidden;
-    font-size: 26px;
+    font-size: 33px;
+    padding: 0px;
+    text-align: center;
+    transition: height 0.3s;
 }
-#foda:hover{
-    width: 200;
-    height: 90px;
-    border: solid black;
+#list_fonts:hover{
+    height: calc(36px *10);
+    overflow: auto;
+    transition: all 0.5s;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+   background-color: white;
+   width: 4px;
 }
