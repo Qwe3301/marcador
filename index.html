@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcador</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css1_geral.css">
+    <link rel="stylesheet" href="css2_barra_lateral.css">
+    <link rel="stylesheet" href="css3_cell.css">
+    <link rel="stylesheet" href="css4_marcaco_textare.css">
+    <link rel="stylesheet" href="css5_fontes.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Comfortaa:wght@300&family=Cookie&family=Dancing+Script&family=Gloria+Hallelujah&family=IBM+Plex+Mono:wght@100&family=Inconsolata:wght@200&family=Indie+Flower&family=Josefin+Sans:wght@100&family=Lobster&family=Mouse+Memoirs&family=Nothing+You+Could+Do&family=Noto+Serif&family=Pacifico&family=Permanent+Marker&family=Quintessential&family=Rajdhani:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@100&family=Sacramento&family=Shadows+Into+Light&family=Tangerine&family=Taviraj:wght@100&display=swap');
     </style>
+    
+    
+
 </head>
-
 <body>
-    <main>
-        <h1>Marcacao de texto </h1>
-        <textarea placeholder="Insira seu texto aqui" name="texto" id="texto"></textarea>
+    
+    <nav>
+        <div class="log">Marcacoes  (ainda em desenvolvimento)</div>
+        <a  href=""><span id="perfil">Perfil (!)</span></a>
+        <a  href=""><span id="criar"> Criar perfil (!)</span></a>
+        <a  href=""><span id="contados"> Contados (!)</span></a>
+        </ul>
+    </nav>
 
-        <div id="botoes_formas">
-            <div>
-                <input id="botao1" type="radio" name="botao">
-                <h1 id="txt_underline" class="botoes sublinhado">Sublinhado </h1>
-            </div>
-            <div>
-                <input id="botao2" type="radio" name="botao">
-                <h1 class="botoes circle" id="txt_circle">Circulo</h1>
-            </div>
-            <div>
-                <input id="botao3" type="radio" name="botao">
-                <h1 class="botoes quadro" id="txt_box">Quadrado</h1>
-            </div>
-            <div>
-                <input id="botao4" type="radio" name="botao">
-                <h1 class="botoes marcador" id="txt_highlight">Realçar</h1>
+    <container id="container">
+        <header>
+            <h1>aqui vai anuncio</h1>
+        </header>
+        <main>
+            <div id="alinhar">
+                 <textarea name="a" id="textarea" placeholder="Insira o texto aqui"></textarea>
+                 <button id="butao_inserir_txt">click aqui</button>
+                 <ul>
+                    <li>Insira o Texto</li>
+                    <li>Configure o Texto</li>
+                    <li>Escolha o estilo de marcacão</li>
+                 </ul>
             </div>
 
-            <div id="div_cor">
-                <h1>Cor da marcação</h1>
-
-                <input id="cor" type="color">
-                <div>
-                    <button id="botao_mudar_cor">Mudar</button>
-                    <h1 id="valor_cor"> #000000</h1>
-                </div>
-                <div>
+            <div id="botoes">
+                <div id="config_font">
                     <ul id="list_fonts">
                         <li id="fonts"> Fontes</li>
                         <li class="font_li">Quintessential</li>
@@ -71,21 +71,94 @@
                         <li class="font_li">Tangerine</li>
                         <li class="font_li">Taviraj</li>
                     </ul>
+                    <button id="button_reset"> Apagar texto !</button>
+
+                    <div id="inputs">
+                        <input id="range" min="10" max="30" type="range"> <br>
+
+                        <p>Tamanho da fonte</p>
+                        <input  type="range"><br>
+                        <p>Espacemento 
+                            <span>
+                                <img class="imgx" src="aespacamento_x.svg" alt="">
+                            </span>(!)
+                        </p>
+                        <input  type="range">
+
+                        <p>Espacemento
+                            <span>
+                                <img class="imgy" src="espacamento_y.svg" alt="">
+                            </span> (!)
+                        </p>
+                    </div>
+
+                    <div id="text_exemple">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, recusandae expedita? Vitae, maxime. Numquam provident dolorum, debitis id, beatae, consectetur officia earum reiciendis placeat at sit et doloribus quis dolore!</p>
+                    </div>
+
+                    <div id="alinhar_txt">
+                        <img src="(--esquerda.svg" alt="">
+                        <img src="centro.svg" alt="">
+                        <img src="justificar.svg" alt="">
+                        <img src="--)direita.svg" alt="">
+                    </div>
+
                 </div>
-                <div id="div_erros"></div>
             </div>
+        </main>
 
+        <aside id="aside">
+            <div id="config_mark">
+               <h1>Estilo marcacão</h1>
+
+                <input id="botao1" type="radio" name="botao">
+                <p id="txt_underline" class="botoes sublinhado">Sublinhado </p>
+                
+                <input id="botao2" type="radio" name="botao">
+                <p class="botoes circle" id="txt_circle">Circulo</p>
+              
+                <input id="botao3" type="radio" name="botao">
+                <p class="botoes quadro" id="txt_box">Quadrado</p>
+               
+                <input id="botao4" type="radio" name="botao">
+                <p class="botoes marcador" id="txt_highlight">Realçar</p>
+               
+    
+                <div id="div_cor">
+                    <div >
+                        <p>Marcador</p>
+                        <input id="cor" type="color">
+                        <button id="botao_mudar_cor">Mudar</button>
+                        <p id="valor_cor"> #000000</p>
+                    </div>
+
+                    <div id="numero1">
+                        <p>Texto</p>
+                        <input id="cor_txt" type="color">
+                        <button id="botao_mudar_cor_txt">Mudar</button>
+                        <p id="valor_cor_txt"> #000000</p>
+                    </div>   
+                </div>   
+            </div>  
+        </aside> 
+        
+        <footer id="footer">
+        </footer> 
+    
+        <div id="junto">
+            <input type="checkbox" id="botao">
+            <label  id="label_img" for="botao"><img id="imagem" src="arrow(--.svg" alt=""></label>
+            <div id="square"></div>
+            <div id="box_error"></div>
         </div>
-
-
-        <button id="botao">click aqui</button>
-        <!--<div id="edicao_txt"></div>-->
-
-        <div id="texto_digitado"></div>
-    </main>
-
+    </container> 
+    
     <script type="module" src="https://unpkg.com/rough-notation?module"></script>
-    <script type="module" src="javascript.js"></script>
+    <script type="module" src="js1_arrow.js"></script>
+    <script type="module" src="Js2_criar_texto.js"></script>
+    <script type="module" src="js3_fixo.js"></script>
+    <script type="module" src="js4_tela.js"></script>
+    <script type="module" src="js5_fonts.js"></script>
+    
 </body>
-
 </html>

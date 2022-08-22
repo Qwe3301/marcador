@@ -89,13 +89,13 @@ function input_txt() {
                     calcular()
         }
     }
-}
+}   
+
+
 
 
 
 let size_list = document.getElementById ("list_fonts")
-
-
 
 let fonts_inical = document.getElementById ("fonts")
 
@@ -103,11 +103,8 @@ let font_atual = "Times New Roman"
 
 for (let i=0; i<size_list.childElementCount; i++ ){
    let change_list= document.getElementsByClassName ("font_li")[i]
-    
+   
     change_list.style.fontFamily = change_list.textContent
-
-
-
     change_list.addEventListener ("mouseover", mudar=> {body.style.fontFamily = change_list.textContent,change_list.style.backgroundColor = "brown"})
     change_list.addEventListener ("mouseout", mudar=> {body.style.fontFamily = font_atual,change_list.style.backgroundColor = "rgb(224, 224, 224)"})
     change_list.addEventListener ("click", mudar=>{font_atual=change_list.textContent,fonts_inical.innerHTML = font_atual,change_list.style.backgroundColor = "green"})

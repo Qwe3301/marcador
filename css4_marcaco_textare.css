@@ -1,0 +1,54 @@
+#textarea{
+    font-size: 20px;
+    width: calc(100% - 86px) ;
+    height: 50px;
+    resize: none;
+}
+#textarea:hover{
+    transition: all 1s;
+    height: 210px;
+}
+#butao_inserir_txt{
+    float: right;
+    height: 48px;
+    width: 70px;
+    margin: 5px;
+}
+#butao_inserir_txt:active{
+    scale: 110%;
+    background-color: aqua;
+}
+#alinhar {
+    background-color:rgb(214, 193, 193);
+    height:222px;
+    overflow: hidden;
+}
+li{
+    font-size: 22px;
+    padding: 10px;
+}
+#config_mark > input{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+}
+#div_cor{
+   display: flex;
+   justify-content: center;
+}
+
+#config_mark{
+    text-align: center;
+}
+#config_mark > p{
+    display: block;
+    color: white;
+    width: 60px;
+    margin: 30px auto 30px auto;   
+}
+#div_cor > div{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}

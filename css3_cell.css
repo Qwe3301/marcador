@@ -1,0 +1,102 @@
+@media only screen and (max-width: 900px) {
+  body{
+      background-color: lightblue;
+  }
+  nav{
+      width: 100%;
+      left: 0%;
+  }
+  #container{
+      width: 100%;
+      grid-template-areas:
+       "h h h"
+       "m m m"
+       "f f f" 
+  }
+  main{
+      grid-area: m;
+      background-color: blue;
+  }
+  #butao_inserir_txt{
+      width: 100%;
+      margin: 0px;
+  }
+  #textarea{
+      width: 100% ;
+  }
+  #textarea:hover{
+      transition: all 1s;
+      height: 180px;
+  }
+  #alinhar{
+      background-color: blueviolet;
+      height:240px;
+      overflow: hidden;
+  }
+  aside{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: brown;
+      text-decoration-style: none;
+      text-align: center;
+      z-index: 1;
+  }
+  aside:hover{
+      border-radius: 10px;
+      width: 300px;
+      height: 600px;   
+      transition: all .5s; 
+  }
+  #erro{
+      position: absolute;
+      border-radius: 50px 0px 0px 50px;
+      background-color: rgb(69, 238, 97);
+      right: 0%;
+      width: 0%;
+      height: 100%;
+      transition: width .7s;
+      margin: 0px;
+      z-index: 6;
+  }
+  #erro:hover{
+      transition: width 1s;
+      width: 50%;
+      height: 100%; 
+      z-index: 1;
+  }
+  #label_img{ 
+    transition: all 1s;
+  }
+  #box_error{
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    z-index: 2;
+  }
+  #botao:checked ~ #box_error{
+    width: 240px;
+    background-color: black;
+    transition: all 1s;
+  }
+  #botao:checked ~ #label_img{
+    transform: translateX(-240px);
+    transition: all 1s;
+  }
+   #botoes{
+    height: 277px;
+  }
+  header{
+  position: relative;
+  top: 55px;
+  }
+
+footer{
+  margin-top: 59px;
+  }
+}

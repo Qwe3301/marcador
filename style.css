@@ -1,14 +1,15 @@
 *{
     list-style: none;
 }
-
-
+p{
+    font-size: 20px;
+    margin: 0px;
+}
 body {
     background-color: rgb(224, 224, 224);
 }
 
 main {
-    
     height: auto;
     width: 1000px;
     font-size: 12px;
@@ -30,6 +31,11 @@ main {
     height: 300px;
 }
 
+#botao{
+    display:block;
+    width: 60.7%;
+}
+
 #texto_digitado{
     margin-top: 20px;
     width: 67%;
@@ -37,10 +43,12 @@ main {
     text-align: justify; 
 }
 
-p{
-    font-size: 20px;
-    margin: 0px;
-    
+#config_mark{
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-right:80px;
+    padding: 15px;
 }
 
 #div_erros{
@@ -53,19 +61,6 @@ p{
     overflow: auto;
     text-align: center;
     margin-right:93px;
-
-}
-
-#botao{
-    display:block;
-    width: 60.7%;
-}
-
-#botoes_formas{
-    width: 200px;
-    float: right;
-    margin-right:80px;
-    padding: 15px;
 }
 
 .botoes {
@@ -73,7 +68,6 @@ p{
     padding: 5px;
     display: flex;
 }
-
 input {
     float: left;
     color: brown;
@@ -118,9 +112,11 @@ svg{
     background-color:rgb(224, 224, 224) ;
     border: 1px solid black;
     position: right 10px;
+    
 }
 
 #list_fonts{
+    position: absolute;
     float: left;
     border: 3px solid black;
     height: 39px;
@@ -129,9 +125,10 @@ svg{
     padding: 0px;
     text-align: center;
     transition: height 0.3s;
+    margin: 10px;
 }
 #list_fonts:hover{
-    height: calc(36px *10);
+    height: calc(36px *6);
     overflow: auto;
     transition: all 0.5s;
 }
@@ -143,4 +140,40 @@ svg{
 ::-webkit-scrollbar-thumb {
    background-color: white;
    width: 4px;
+}
+
+
+#config_font{
+    width: 60.1%;
+    height: 300px;
+    margin: 0px;
+    border: solid black;
+}
+
+#div_range_font {
+    margin-top: 17%;
+    width: 300px;
+    margin-left: 4%;
+}
+
+#range_font{
+    position: absolute;
+    width: 300px;
+    margin-left: 4%;
+    display: inline;
+}
+
+#botao_font1{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    margin-top: 85px;
+    margin-left: 33% ;
+}
+#botao_font2{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    margin-top: -120px;
+    margin-left: 33% ;
 }
