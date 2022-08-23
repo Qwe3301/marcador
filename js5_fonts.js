@@ -29,7 +29,7 @@ function alinhar (isso){
     justify.style.backgroundColor = "rgb(206, 151, 151)"
     right.style.backgroundColor = "rgb(206, 151, 151)"
 
-    if (isso.path[0].src == "http://127.0.0.1:5502/img/(--esquerda.svg"){
+    if (isso.path[0].src == "https://qwe3301.github.io/marcador/img/(--esquerda.svg"){
         body.style.textAlign = "left"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "left"
