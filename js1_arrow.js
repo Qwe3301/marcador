@@ -1,5 +1,3 @@
-import { annotate, annotationGroup } from "https://unpkg.com/rough-notation?module"
-
 const a = "arrow(--.svg"
 const b = "arrow--).svg"
 const img = document.querySelector ("#imagem")
