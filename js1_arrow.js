@@ -1,5 +1,5 @@
-const a = "arrow(--.svg"
-const b = "arrow--).svg"
+const a = "img/arrow(--.svg"
+const b = "img/arrow--).svg"
 const img = document.querySelector ("#imagem")
 img.addEventListener ("click", mudar)
 

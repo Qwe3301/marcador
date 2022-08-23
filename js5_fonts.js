@@ -18,29 +18,33 @@ right.addEventListener ("click", alinhar)
 
 let alinhamento = left
 
+
+//console.log (left.currentSrc)
+
 function alinhar (isso){
     let mudar = isso.path[0]
+    console.log(isso.path[0].src)
     left.style.backgroundColor = "rgb(206, 151, 151)"
     center.style.backgroundColor = "rgb(206, 151, 151)"
     justify.style.backgroundColor = "rgb(206, 151, 151)"
     right.style.backgroundColor = "rgb(206, 151, 151)"
 
-    if (isso.path[0].src == "http://127.0.0.1:5500/(--esquerda.svg"){
+    if (isso.path[0].src == "http://127.0.0.1:5502/img/(--esquerda.svg"){
         body.style.textAlign = "left"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "left"
     }
-    else if (isso.path[0].src == "http://127.0.0.1:5500/centro.svg"){
+    else if (isso.path[0].src == "http://127.0.0.1:5502/img/centro.svg"){
         body.style.textAlign = "center"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "center"
     }
-    else if (isso.path[0].src == "http://127.0.0.1:5500/justificar.svg"){
+    else if (isso.path[0].src == "http://127.0.0.1:5502/img/justificar.svg"){
         body.style.textAlign = "justify"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "justify"
     }
-    else if (isso.path[0].src == "http://127.0.0.1:5500/--)direita.svg"){
+    else if (isso.path[0].src == "http://127.0.0.1:5502/img/--)direita.svg"){
         body.style.textAlign = "right"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "right"
