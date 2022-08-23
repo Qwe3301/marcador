@@ -34,17 +34,18 @@ function alinhar (isso){
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "left"
     }
-    else if (isso.path[0].src == "http://127.0.0.1:5502/img/centro.svg"){
+    else if (isso.path[0].src == "https://qwe3301.github.io/marcador/img/centro.svg"){
+        console.log ("isso")
         body.style.textAlign = "center"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "center"
     }
-    else if (isso.path[0].src == "http://127.0.0.1:5502/img/justificar.svg"){
+    else if (isso.path[0].src == "https://qwe3301.github.io/marcador/img/justificar.svg"){
         body.style.textAlign = "justify"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "justify"
     }
-    else if (isso.path[0].src == "http://127.0.0.1:5502/img/--)direita.svg"){
+    else if (isso.path[0].src == "https://qwe3301.github.io/marcador/img/--)direita.svg"){
         body.style.textAlign = "right"
         mudar.style.backgroundColor = "green"
         text_exemple.style.textAlign = "right"
