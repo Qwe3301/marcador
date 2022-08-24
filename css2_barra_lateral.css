@@ -14,20 +14,19 @@
     position: fixed;
     top: 45%;
     right: 0px;
-    width: 100px;
+    width: 50px;
     background-color: rgb(82, 82, 82);
-    
     transition: all 1s;
 }
 #imagem {
-    width: 100px;
+    width: 50px;
 }
 #botao {
     display: none;
 }
 #botao:checked ~ #label_img{
-    transform: translateX(-540px);
+    transform: translateX(-440px);
 }
 #botao:checked ~ #box_error{
-    width: 540px;
+    width: 440px;
 }
