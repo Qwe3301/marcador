@@ -12,7 +12,7 @@ function selec_menu (){
 
     let ta = img.src
 console.log ( ta)
-    if ( img.src == "http://127.0.0.1:5502/img/setting.svg"){
+    if ( img.src == "https://qwe3301.github.io/marcador/img/setting.svg"){
          img.src = "img/wrong.svg"
     }
     else {
