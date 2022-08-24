@@ -48,7 +48,7 @@
     #aside.active{
         border-radius: 10px;
         width: 300px;
-        height: 600px;   
+        height: 80vh;   
         transition: all .5s;
     }
     
