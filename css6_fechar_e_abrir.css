@@ -1,7 +1,8 @@
 
 @media only screen and (max-width: 900px) {
     
-
+    
+    
     aside{
         position: fixed;
         right: 0;
@@ -42,9 +43,7 @@
         background-color: rgb(211, 211, 211);
     }
 
-    #setting{
-        display: none;
-    }
+    
 
     #aside.active{
         border-radius: 10px;
@@ -58,3 +57,10 @@
     
   
 }
+#setting{
+        display: none;
+    }
+
+    #imagem_active {
+        position: absolute;
+    }
